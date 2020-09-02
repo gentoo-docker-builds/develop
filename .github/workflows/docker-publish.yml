@@ -2,9 +2,9 @@ name: Docker
 
 on:
   push:
-    # Publish `master` as Docker `latest` image.
-    branches:
-      - master
+  schedule:
+    - cron: '0 4 * * *'
+
 
     # Publish `v1.2.3` tags as releases.
     tags:
