@@ -3,11 +3,9 @@ name: Docker
 on:
   schedule:
     - cron: '0 4 * * *'
-
-
-  # Publish `v1.2.3` tags as releases.
-  tags:
-    - v*
+  push:
+    branches: 
+      - master
 
   # Run tests for any PRs.
   pull_request:
